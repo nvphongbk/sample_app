@@ -33,3 +33,6 @@ en:
       end: This is the sample application for the tutorial.
     contact:
       title: Contact
+  helpers:
+    application_helper:
+      title: Ruby on Rails Tutorial Sample App
