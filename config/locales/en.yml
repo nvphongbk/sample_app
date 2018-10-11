@@ -1,38 +1,44 @@
 en:
-  application:
+  layouts:
+    footer:
+      link_new1: The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+      link_new2: by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+      link_new3: <a href="http://news.railstutorial.org/">News</a>
+      contact: Contact
+      about: About
+    header:
+      sample_app: Sample app
+      Home: Home
+      Help: Help
+      Log_in: Log in
+    application:
     title: Ruby on Rails Tutorial Sample App
   static_pages:  
     home:
       title: Home
-      name: Sample App
-      content: This is the home page for the
-      rails_link: Ruby on Rails Tutorial
-      rails_url: http://www.railstutorial.org/
+      rails_logo: Rails logo
+      h1_home: Welcome to the Sample App
+      h2_home: This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
+      sign_up: Sign up now!
+      link_content_home: This is the home page for the <a href = "http://www.railstutorial.org" > Ruby on Rails Tutorial</a> sample application.
     help:
       title: Help
-      p1: Get help on the Ruby on Rails Tutorial at the
-      rails_link_help: Rails Tutorial help section
-      rails_url_help: http://www.railstutorial.org/help
-      p2: To get help on this sample app, see the
-      rails_link_book: Ruby on Rails Tutorial book
-      rails_url_book: http://www.railstutorial.org/book
+      link_get: Get help on the Ruby on Rails Tutorial at the <a href = "http://www.railstutorial.org/help" >Rails Tutorial help section </a>.
+      link_see: To get help on this sample app, see the <a href = "http://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em> book</a>.
     about:
       name: About
-      the: The
-      rails_link: Ruby on Rails Tutorial
-      rails_url: http://www.railstutorial.org/
-      is_a: is a
-      rails_link_book: book
-      rails_link_url_book: http://www.railstutorial.org/book
-      and: and
-      screencasts: screencast series
-      rails_link_url_screencasts: http://screencasts.railstutorial.org/
-      to teach web development with: to teach web development with
-      rails_link: Ruby on Rails 
-      rails_url: http://rubyonrails.org/
-      end: This is the sample application for the tutorial.
+      link_the: The <a href = "http://www.railstutorial.org" > Ruby on Rails Tutorial</a>
+      link_and: is a <a href = "http://www.railstutorial.org/book">book</a> and
+      link_screencasts: <a href = "http://screencasts.railstutorial.org/" > screencast series</a> to teach web development with
+      link_end: <a href = "http://www.railstutorial.org"> Ruby on Rails</a>. This is the sample application for the tutorial.
     contact:
       title: Contact
+      link_about: Contact the Ruby on Rails Tutorial about the sample app at the
+      link_contact: <a href = "http://www.railstutorial.org/contact">contact page</a>.
+  users:
+    new: 
+        sign_up: Sign up
+        p_new: This will be a signup page for new users.
   helpers:
     application_helper:
       title: Ruby on Rails Tutorial Sample App
