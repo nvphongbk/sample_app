@@ -1,5 +1,7 @@
 en:
-  layouts:
+  controllers:
+    users:
+      user_wellcome: Welcome to the Sample App!
     footer:
       link_new1: The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
       link_new2: by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
@@ -8,9 +10,9 @@ en:
       about: About
     header:
       sample_app: Sample app
-      Home: Home
-      Help: Help
-      Log_in: Log in
+      home: Home
+      help: Help
+      log_in: Log in
     application:
     title: Ruby on Rails Tutorial Sample App
   static_pages:  
@@ -36,9 +38,20 @@ en:
       link_about: Contact the Ruby on Rails Tutorial about the sample app at the
       link_contact: <a href = "http://www.railstutorial.org/contact">contact page</a>.
   users:
-    new: 
-        sign_up: Sign up
-        p_new: This will be a signup page for new users.
+    new:
+      confirmation: Confirmation
+      sign_up: Sign up
+      p_new: This will be a signup page for new users.
+      create_button: Create my account
   helpers:
     application_helper:
       title: Ruby on Rails Tutorial Sample App
+    label:
+      user:
+        name: Name
+        email: Email
+        password: Password
+  shared:
+    error_messages:
+      error: error
+        
