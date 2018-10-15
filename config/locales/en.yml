@@ -2,6 +2,11 @@ en:
   controllers:
     users:
       user_wellcome: Welcome to the Sample App!
+      profile_updated: Profile_updated
+      please_login: Please log in.
+      notuser: User does exist
+      success_delete: User deleted
+    failed_delete: Failed_delete
     sessions:
       invalid: Invalid email/password combination
   layouts:    
@@ -51,6 +56,17 @@ en:
       sign_up: Sign up
       p_new: This will be a signup page for new users.
       create_button: Create my account
+    index:
+      title: All users
+    edit:
+      title: Edit user
+      update_your_profile: Update your profile
+      save_changes: Save changes
+      change: Change
+      confirmation: Confirmation
+    user:
+      delete: Delete
+      you_sure: You sure?
   helpers:
     application_helper:
       title: Ruby on Rails Tutorial Sample App
