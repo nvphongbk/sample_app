@@ -2,6 +2,9 @@ en:
   controllers:
     users:
       user_wellcome: Welcome to the Sample App!
+    sessions:
+      invalid: Invalid email/password combination
+  layouts:    
     footer:
       link_new1: The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
       link_new2: by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
@@ -13,6 +16,11 @@ en:
       home: Home
       help: Help
       log_in: Log in
+      log_out: Log out
+      users: Users
+      profile: Profile
+      settings: Settings
+      link_account: Account <b class="caret"></b>
     application:
     title: Ruby on Rails Tutorial Sample App
   static_pages:  
@@ -51,7 +59,18 @@ en:
         name: Name
         email: Email
         password: Password
+      session: 
+        email: Email
+        password: Password
   shared:
     error_messages:
-      error: error
+      the_form_contains: The Form Contains
+  error:
+    one: 1 error
+    other: "%{count} errors"    
+  sessions:
+    new:
+      log_in: Log in
+      new_user: New user?
+      sign_up_now: Sign up now!  
         
