@@ -3,3 +3,5 @@ user:
     name_max_lenght: 50
     email_max_lenght: 255
     password_min_lenght: 6
+sessions:
+  check_session: "1"
