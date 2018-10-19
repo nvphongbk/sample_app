@@ -10,3 +10,4 @@ users:
   gravatar_size: 50
 helper:
   gravatar_size: 80
+hours_expire: 2
