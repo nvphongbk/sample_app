@@ -11,15 +11,25 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
+  def check_session user
+    if params[:session][:remember_me] == Settings.sessions.check_session
+      remember user
+    else
+      forget user
+    end
+  end
+
   def check_user user
     if user&.authenticate(params[:session][:password])
-      log_in user
-      if params[:session][:remember_me] == Settings.sessions.check_session
-        remember user
+      if user.activated?
+        log_in user
+        check_session user
+        redirect_back_or user
       else
-        forget user
+        message = t "controllers.sessions.check_mail"
+        flash[:warning] = message
+        redirect_to root_path
       end
-      redirect_to user
     else
       flash.now[:danger] = t "controllers.sessions.invalid"
       render :new

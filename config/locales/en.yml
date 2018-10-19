@@ -1,7 +1,7 @@
 en:
   controllers:
     users:
-      user_wellcome: Welcome to the Sample App!
+      user_checkemail: Please check your email to activate your account.
       profile_updated: Profile_updated
       please_login: Please log in.
       notuser: User does exist
@@ -9,6 +9,10 @@ en:
     failed_delete: Failed_delete
     sessions:
       invalid: Invalid email/password combination
+      check_mail: Account not activated. Check your email for the activation link.
+    account_activations:
+      account_activated: Account_activated!
+      activation_link: Invalid activation link
   layouts:    
     footer:
       link_new1: The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
@@ -50,6 +54,11 @@ en:
       title: Contact
       link_about: Contact the Ruby on Rails Tutorial about the sample app at the
       link_contact: <a href = "http://www.railstutorial.org/contact">contact page</a>.
+  user_mailer:
+    account_activation:
+      title: Sample App
+      greeting: Hi %{name}
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
   users:
     new:
       confirmation: Confirmation
@@ -90,4 +99,8 @@ en:
       new_user: New user?
       sign_up_now: Sign up now!
       remember_account_html: <span>Remember me on this computer</span> 
+  mailers:
+    user_mailer:
+      account_activation: Account activation
+      hi: Hi
         

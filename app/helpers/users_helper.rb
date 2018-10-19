@@ -8,5 +8,7 @@ module UsersHelper
 
   def authorization_delete user
     return unless current_user.admin? && !current_user?(user)
+    link_to t(".delete"), user, method: :delete,
+      data: {confirm: t(".you_sure")}
   end
 end
