@@ -10,3 +10,7 @@ users:
   gravatar_size: 50
 helper:
   gravatar_size: 80
+user_gravatar: 50
+maximum_content: 140
+hours_expire: 2
+img_size: 5

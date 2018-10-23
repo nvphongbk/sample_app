@@ -1,5 +1,13 @@
 en:
+  models:
+    micropost:
+      less_than_5MB: should be less than 5MB
   controllers:
+    microposts:
+      micropost_created: Micropost created!
+      micropost_deleted: Micropost deleted
+      micropost_not_found: Micropost not found
+      can_not_delete: you can'n not delete
     users:
       user_checkemail: Please check your email to activate your account.
       profile_updated: Profile_updated
@@ -12,13 +20,15 @@ en:
       check_mail: Account not activated. Check your email for the activation link.
     account_activations:
       account_activated: Account_activated!
-      activation_link: Invalid activation link
+      invalid_link: Invalid activation link
     password_resets:
       mess_send_mail: Email sent with password reset instructions
       mail_not_found: "Email address not found"
       email_not_empty: "can't be empty"
       password_has_been_reset: "Password has been reset."
       password_reset_expired: "Password reset has expired."
+    application:
+      please_log_in: Please log in.
   layouts:    
     footer:
       link_new1: The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
@@ -38,9 +48,14 @@ en:
       link_account: Account <b class="caret"></b>
     application:
     title: Ruby on Rails Tutorial Sample App
+  microposts:
+    micropost:
+      delete: Delete
+      you_sure: You sure?
   static_pages:  
     home:
       title: Home
+      micropost_feed: Micropost Feed
       rails_logo: Rails logo
       h1_home: Welcome to the Sample App
       h2_home: This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
@@ -103,8 +118,16 @@ en:
       password_reset:
         email: Email
   shared:
+    micropost_form:
+      new_micropost: Compose new micropost...
+      post: Post
+      maximum_file_size: Maximum file size is 5MB. Please choose a smaller file
+    user_info:
+      view_profile: view my profile
+      micropost: micropost
     error_messages:
       the_form_contains: The Form Contains
+      error: error
   error:
     one: 1 error
     other: "%{count} errors"
@@ -115,6 +138,7 @@ en:
     edit:
       title: Reset password
       confirmation: Confirmation
+      update_password: Update password
   sessions:
     new:
       log_in: Log in
@@ -127,4 +151,4 @@ en:
       account_activation: Account activation
       hi: Hi
       password_reset: Password Reset
-        
+  

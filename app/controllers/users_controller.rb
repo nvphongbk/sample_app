@@ -13,7 +13,9 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @microposts = @user.feed.paginate(page: params[:page])
+  end
 
   def create
     @user = User.new user_params
@@ -65,7 +67,7 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    redirect_to(root_path) unless current_user?(@user)
+    redirect_to(root_path) unless current_user? @user
   end
 
   def admin_user
